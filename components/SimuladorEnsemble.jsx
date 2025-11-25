@@ -348,60 +348,9 @@ export default function SimuladorEnsemble() {
 
         <div className="mt-8 text-center text-gray-500 text-xs md:text-sm">
           <p>Modelo: RandomForest Ensemble | MAE Validação: {MAE_REFERENCIA.validacao.toFixed(3)}</p>
-          <p className="mt-1">⚠️ Simulação aproximada para visualização</p>
+          <p className="mt-1">Simulação aproximada para visualização</p>
         </div>
       </div>
     </div>
   );
 }
-```
-
-4. **Commit new file**
-
----
-
-## 📋 **PASSO 3: Conectar Vercel ao GitHub**
-
-1. Acesse: **https://vercel.com**
-2. Clique em **Sign Up** (ou **Log In** se já tiver conta)
-3. Escolha **Continue with GitHub**
-4. Autorize o Vercel a acessar seu GitHub
-
----
-
-## 📋 **PASSO 4: Fazer Deploy**
-
-1. No dashboard do Vercel, clique em **Add New...** → **Project**
-2. Na lista de repositórios, encontre **simulador-alpargatas**
-3. Clique em **Import**
-4. Na tela de configuração:
-   - **Framework Preset:** Next.js (detectado automaticamente)
-   - **Root Directory:** `.` (deixe como está)
-   - Não precisa mudar mais nada!
-5. Clique em **Deploy**
-6. **Aguarde 1-2 minutos** ⏳
-
----
-
-## 📋 **PASSO 5: Pronto! 🎉**
-
-Após o deploy, você verá:
-- ✅ **URL do seu app:** algo como `simulador-alpargatas.vercel.app`
-- Clique na URL para ver seu simulador funcionando!
-
----
-
-## 📁 **Estrutura Final do Repositório:**
-```
-simulador-alpargatas/
-├── app/
-│   ├── layout.js
-│   ├── page.js
-│   └── globals.css
-├── components/
-│   └── SimuladorEnsemble.jsx
-├── package.json
-├── next.config.js
-├── tailwind.config.js
-├── postcss.config.js
-└── README.md
